@@ -54,8 +54,9 @@ move_map = {
     # Dayak
     'dayak_train_000004.jpg': 'minangkabau',
     'dayak_train_000019.jpg': 'balinese',
+    'dayak_train_000025.jpg': 'delete',
     'dayak_train_000026.jpg': 'minangkabau',
-    'dayak_train_000052.jpg': 'balinese',
+    'dayak_train_000052.jpg': 'javanese',
 
     # Javanese
     'javanese_train_000007.jpg': 'balinese',
