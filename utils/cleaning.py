@@ -4,25 +4,43 @@ from pathlib import Path
 from fastai.vision.all import get_image_files, progress_bar
 
 move_map = {
-    # Balinese
     'balinese_train_000003.jpg': 'javanese',
-    'balinese_train_000066.jpg': 'balinese',
+    'balinese_train_000066.jpg': 'javanese',
     'balinese_train_000157.jpg': 'delete',
+    'balinese_train_000083.jpg': 'batak',
+    'balinese_train_000192.jpg': 'delete',
+    'balinese_train_000233.jpg': 'delete',
+    'balinese_train_000245.jpg': 'minangkabau',
     'balinese_train_000278.jpg': 'javanese',
+    'balinese_train_000341.jpg': 'delete',
+    'balinese_train_000391.jpg': 'delete',
+    'balinese_train_000425.jpg': 'delete',
+    'balinese_train_000489.jpg': 'delete',
+    'balinese_train_000529.jpg': 'javanese',
     'balinese_train_000559.jpg': 'delete',
+    'balinese_train_000586.jpg': 'javanese',
     'balinese_train_000595.jpg': 'dayak',
+    'balinese_train_000651.jpg': 'javanese',
+    'balinese_train_000721.jpg': 'delete',
+    'balinese_train_000740.jpg': 'delete',
+    'balinese_train_000745.jpg': 'javanese',
     'balinese_train_000760.jpg': 'batak',
+    'balinese_train_000761.jpg': 'batak',
     'balinese_train_000762.jpg': 'batak',
+    'balinese_train_000763.jpg': 'dayak',
+    'balinese_train_000764.jpg': 'minangkabau',
     'balinese_train_000765.jpg': 'javanese',
+    'balinese_train_000766.jpg': 'javanese',
+    'balinese_train_000767.jpg': 'javanese',
     'balinese_train_000768.jpg': 'javanese',
+    'balinese_train_000769.jpg': 'javanese',
     'balinese_train_000770.jpg': 'javanese',
     'balinese_train_000771.jpg': 'minangkabau',
     'balinese_train_000772.jpg': 'minangkabau',
     'balinese_train_000773.jpg': 'minangkabau',
     'balinese_train_000774.jpg': 'minangkabau',
+    'balinese_train_000775.jpg': 'delete',
     'balinese_train_000776.jpg': 'minangkabau',
-
-    # Batak
     'batak_train_000001.jpg': 'balinese',
     'batak_train_000002.jpg': 'balinese',
     'batak_train_000003.jpg': 'delete',
@@ -33,7 +51,7 @@ move_map = {
     'batak_train_000032.jpg': 'delete',
     'batak_train_000033.jpg': 'delete',
     'batak_train_000035.jpg': 'delete',
-    'batak_train_000038.jpg': 'delete', # bener batak tapi kayak noise
+    'batak_train_000038.jpg': 'delete',
     'batak_train_000040.jpg': 'delete',
     'batak_train_000042.jpg': 'delete',
     'batak_train_000043.jpg': 'delete',
@@ -50,15 +68,11 @@ move_map = {
     'batak_train_000093.jpg': 'javanese',
     'batak_train_000094.jpg': 'minangkabau',
     'batak_train_000095.jpg': 'minangkabau',
-
-    # Dayak
     'dayak_train_000004.jpg': 'minangkabau',
     'dayak_train_000019.jpg': 'balinese',
     'dayak_train_000025.jpg': 'delete',
     'dayak_train_000026.jpg': 'minangkabau',
     'dayak_train_000052.jpg': 'javanese',
-
-    # Javanese
     'javanese_train_000007.jpg': 'balinese',
     'javanese_train_000009.jpg': 'balinese',
     'javanese_train_000015.jpg': 'dayak',
@@ -73,8 +87,6 @@ move_map = {
     'javanese_train_000213.jpg': 'batak',
     'javanese_train_000245.jpg': 'minangkabau',
     'javanese_train_000249.jpg': 'minangkabau',
-
-    # Minangkabau
     'minangkabau_train_000003.jpg': 'balinese',
     'minangkabau_train_000005.jpg': 'balinese',
     'minangkabau_train_000008.jpg': 'delete',
@@ -93,7 +105,6 @@ move_map = {
     'minangkabau_train_000180.jpg': 'javanese',
     'minangkabau_train_000200.jpg': 'javanese',
     'minangkabau_train_000231.jpg': 'delete',
-
     'minangkabau_train_000299.jpg': 'balinese',
     'minangkabau_train_000388.jpg': 'balinese',
     'minangkabau_train_000411.jpg': 'batak',
